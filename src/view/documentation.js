@@ -20,7 +20,7 @@ const instriction = {
 };
 
 export default () => {
-  const screen = refC(instriction["#reactive"]);
+  const screen = refC(instriction["#reactComp"]);
   const switchScreen = (e) => {
     screen.value = instriction[e.id];
   }
