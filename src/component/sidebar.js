@@ -1,8 +1,42 @@
 import Title from "./comp/title";
 
-import menu from "../menu/menu";
+import link from "../component/comp/link";
 
-const sidebar = () => {
+const ar = [
+  {
+    title: "Запуск",
+    id: "#start"
+  },
+  {
+    title: "Файловая система",
+    id: "#file"
+  },
+  {
+    title: "Компоненты",
+    id: "#component"
+  },
+  {
+    title: "Реактивность",
+    id: "#reactive"
+  },
+  {
+    title: "Watch",
+    id: "#watch"
+  }
+]
+
+const menu = ar.map(i => {
+  return {
+    tag: link,
+    props: {
+      title: i.title,
+      id: i.id
+    }
+  }
+});
+
+
+const sidebar = (props) => {
   return {
     tag: "div",
     props: {
@@ -21,10 +55,28 @@ const sidebar = () => {
       {
         tag: Title,
         props: {
-          title: "Меню"
+          title: "Меню",
         }
       },
-      menu
+      ar.map(i => {
+          return {
+            tag: "div",
+            props: {
+              "@click" : function() {
+                props.call(i);
+              }
+            },
+            child: [
+              {
+                tag: link,
+                props: {
+                  title: i.title,
+                  id: i.id
+                }
+              }
+            ]
+          }
+      }),
     ]
   }
 }

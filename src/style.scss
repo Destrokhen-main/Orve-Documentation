@@ -24,6 +24,11 @@ b {
   background-color: rgb(242, 242, 242);
 }
 
+.modal-block {
+  height: 100vh;
+  overflow: auto;
+}
+
 .modal-block div {
   margin-bottom: 20px;
 }

@@ -1,10 +1,4 @@
-import Start from "../component/screen/start";
-import File from "../component/screen/file";
-import Component from "../component/screen/component";
-import Reactive from "../component/screen/reactive";
-import Watch from "../component/screen/watch";
-
-const modal = () => {
+const modal = (props) => {
   return {
     tag: "div",
     props: {
@@ -15,11 +9,7 @@ const modal = () => {
       class: "modal-block"
     },
     child: [
-      Start,
-      File,
-      Component,
-      Reactive,
-      Watch
+      ...props.children
     ]
   }
 }

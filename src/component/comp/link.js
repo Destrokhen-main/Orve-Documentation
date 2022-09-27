@@ -7,11 +7,6 @@ const link = (props) => {
         padding: "10px 10px",
         cursor: "pointer"
       },
-      "@click": function () {
-        const id = this.props.moveTo;
-        const ele = document.querySelector(id);
-        window.scrollTo(ele.offsetLeft, ele.offsetTop);
-      }
     },
     child: [
       {
