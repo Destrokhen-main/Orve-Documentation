@@ -22,10 +22,11 @@ b {
 
 #app {
   background-color: rgb(242, 242, 242);
+  min-height: 100vh;
 }
 
 .modal-block {
-  height: 100vh;
+  height: 100%;
   overflow: auto;
 }
 

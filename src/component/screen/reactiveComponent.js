@@ -1,5 +1,4 @@
 import Title from "../comp/title";
-import code from "../comp/code";
 import layer from "../../layout/layerBlock";
 
 import example from "../example/reactiveComp";
