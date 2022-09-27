@@ -1,4 +1,6 @@
 import Title from "../comp/title";
+import component from "../example/component";
+import ComponentCallback from "../example/componentCallback";
 
 export default () => {
   return {
@@ -43,7 +45,107 @@ export default () => {
 }
 export default comp;`
         ],
+      },
+      "Если вы используете один компонент внутри другого, вы можете, отправить ему props и child",
+      {
+        tag: "p",
+        child: ["Пример:"]
+      },
+      {
+        tag: "pre",
+        child: [
+`const one = (props) => {
+  return {
+    tag: "div",
+    props: {
+      id: props.id,
+    },
+    child: [
+      ...props.children
+    ]
+  }
+}
+
+export default main = () => {
+  return {
+    tag: "div",
+    child: [
+      {
+        tag:one,
+        props: {
+          id: "test",
+        },
+        child: [
+          {
+            tag: "p",
+            child: [
+              "какой-то текст"
+            ]
+          }
+        ]
       }
+    ]
+  }
+}
+`
+        ]
+      },
+      "Результат:",
+      component,
+      "<hr />",
+      "Так же вы можете передавать callback или что-то такое, например. (Дальше будет использован ref, посмотрите Соответствующий раздел (реактивность))",
+      {
+        tag: "pre",
+        child: [
+`import { ref } from "core";
+
+const comp = (props) => {
+  return {
+    tag: "button",
+    props: {
+      "@click" : () => {
+        props.call("fff")
+      } 
+    },
+    child: [
+      "click"
+    ]
+  }
+}
+
+export default () => {
+  const v = ref(1);
+  const text = ref("")
+
+  const callback = (t) => {
+    v.value += 1;
+    text.value = t;
+  }
+
+  return {
+    tag: "div",
+    child: [
+      {
+        tag: "p",
+        child: [
+          v,
+          " ",
+          text
+        ]
+      },
+      {
+        tag: comp,
+        props: {
+          call: callback,
+        }
+      }
+    ]
+  }
+}
+`
+        ]
+      },
+      ComponentCallback
     ]
   }
 }
