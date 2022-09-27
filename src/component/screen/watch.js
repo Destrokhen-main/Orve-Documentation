@@ -9,7 +9,12 @@ export default () => {
       id: "watch",
       style: {
         display: "flex",
-        flexDirection: "column"
+        flexDirection: "column",
+        backgroundColor: "white",
+        padding: "0 10px",
+        paddingBottom: "10px",
+        borderBottomLeftRadius: "5px",
+        borderBottomRightRadius: "5px"
       }
     },
     child: [

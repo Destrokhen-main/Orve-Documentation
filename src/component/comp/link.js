@@ -4,7 +4,7 @@ const link = (props) => {
     props: {
       moveTo: props.id,
       style: {
-        padding: "10px 0",
+        padding: "10px 10px",
         cursor: "pointer"
       },
       "@click": function () {

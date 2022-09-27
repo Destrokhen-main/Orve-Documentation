@@ -13,6 +13,7 @@ const sidebar = () => {
           left: "5px",
           bottom: "10px"
         },
+        backgroundColor: "white"
       }
     },
     child: [

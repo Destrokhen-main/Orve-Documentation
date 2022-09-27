@@ -4,7 +4,10 @@ const layer = (props) => {
   return {
     tag: "div",
     props: {
-      class: "layer"
+      class: "layer",
+      style: {
+        marginTop: "10px"
+      }
     },
     child: [
       ...props.children

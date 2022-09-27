@@ -11,7 +11,8 @@ const modal = () => {
       style: {
         width: "70%",
         padding: "0 5px"
-      }
+      },
+      class: "modal-block"
     },
     child: [
       Start,

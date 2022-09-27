@@ -19,3 +19,15 @@ b {
   background-color: azure;
   padding: 0 5px;
 }
+
+#app {
+  background-color: rgb(242, 242, 242);
+}
+
+.modal-block div {
+  margin-bottom: 20px;
+}
+
+.modal-block div:last-child {
+  margin-bottom: 0;
+}
