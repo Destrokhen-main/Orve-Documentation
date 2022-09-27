@@ -1,6 +1,6 @@
 import "./layer.scss";
 
-const layer = (props) => {
+export default (props) => {
   return {
     tag: "div",
     props: {
@@ -14,5 +14,3 @@ const layer = (props) => {
     ]
   }
 }
-
-export default layer;
