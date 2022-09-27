@@ -147,6 +147,7 @@ export default () => {
 `
         ]
       },
+      "Результат:",
       ComponentCallback
     ]
   }
