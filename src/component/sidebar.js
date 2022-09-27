@@ -22,6 +22,10 @@ const ar = [
   {
     title: "Watch",
     id: "#watch"
+  },
+  {
+    title: "Реактивные компоненты",
+    id: "#reactComp"
   }
 ]
 

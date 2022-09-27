@@ -8,6 +8,7 @@ import File from "../component/screen/file";
 import Component from "../component/screen/component";
 import Reactive from "../component/screen/reactive";
 import Watch from "../component/screen/watch";
+import ReactiveComponent from "../component/screen/reactiveComponent";
 
 const instriction = {
   "#start" : Start,
@@ -15,11 +16,11 @@ const instriction = {
   "#component" : Component,
   "#reactive": Reactive,
   "#watch": Watch,
+  "#reactComp": ReactiveComponent
 };
 
 export default () => {
   const screen = refC(instriction["#reactive"]);
-  console.log(screen);
   const switchScreen = (e) => {
     screen.value = instriction[e.id];
   }

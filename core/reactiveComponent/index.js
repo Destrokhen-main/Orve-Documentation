@@ -26,7 +26,6 @@ const s = (component) => {
         if (prop === "value") {
           if (target.parent.length > 0) {
             let newObj = builder(value);
-            console.log(newObj);
             const object  = createNodeRebuild(null, newObj);
             target.parent = target.parent.map((el) => {
               el.insertAdjacentElement('afterend', object);
