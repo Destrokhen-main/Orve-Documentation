@@ -1,42 +1,21 @@
+@import url("./assets/font/font.css");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-.img {
-  font-size: 24px;
-  font-weight: bold;
+  font-family: "font";
 }
 
 
-.app {
-  text-align: center;
+code, pre {
+  padding: 10px;
+  background-color: whitesmoke;
 }
 
-
-.block {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.label {
-  font-size: 1.5rem;
-}
-
-.img {
-  width: 50%;
-  font-weight: bold;
-}
-
-
-.btn {
-  padding: 5px 10px;
-  font-size: 20px;
-  margin: 5px 0;
-  border: 1px solid black;
-  cursor: pointer;
+b {
+  font-family: "font";
+  font-style: italic;
+  background-color: azure;
+  padding: 0 5px;
 }

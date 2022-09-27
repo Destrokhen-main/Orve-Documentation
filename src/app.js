@@ -1,14 +1,25 @@
 import "./style.scss";
-import helloWorld from "./component/helloword";
+import layer from "./layout/layer";
+import doc from "./view/documentation";
 
 const App = () => {
   return {
     tag: "div",
     props: {
-      class: "app block",
+      style: {
+        display: "flex",
+        justifyContent: "center"
+      }
     },
     child: [
-      helloWorld,
+      {
+        tag: layer,
+        props: {
+          children: [
+            doc
+          ]
+        }
+      }
     ]
   }
 }
