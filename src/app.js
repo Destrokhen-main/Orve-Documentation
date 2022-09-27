@@ -14,11 +14,9 @@ const App = () => {
     child: [
       {
         tag: layer,
-        props: {
-          children: [
-            doc
-          ]
-        }
+        child: [
+          doc
+        ]
       }
     ]
   }
