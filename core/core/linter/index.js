@@ -75,6 +75,7 @@ const validateFunctionAnswer = (res, index) => {
 
 const TAG_TYPE_NODE = ["string", "function"];
 const validatorTagNode = (node) => {
+  if (node === undefined) error("Какой-то компонент ничего не вернул")
   Object.keys(node).forEach((key) => {
     if (!SUPPORTED_VARIABLES.includes(key)) error(`${key} - ${errorMessage.useUnsupportedVariables}`);
   });
