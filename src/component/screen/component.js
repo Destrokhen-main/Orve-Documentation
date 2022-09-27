@@ -2,18 +2,12 @@ import Title from "../comp/title";
 import component from "../example/component";
 import ComponentCallback from "../example/componentCallback";
 
+import layer from "../../layout/layerBlock";
+
 export default () => {
   return {
-    tag: "div",
+    tag: layer,
     props: {
-      style: {
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: "white",
-        padding: "0 10px",
-        paddingBottom: "10px",
-        borderRadius: "5px",
-      },
       id: "component"
     },
     child: [

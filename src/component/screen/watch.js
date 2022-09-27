@@ -2,19 +2,12 @@ import Title from "../comp/title";
 
 import watch from "../example/watch"
 
+import layer from "../../layout/layerBlock";
 export default () => {
   return {
-    tag: "div",
+    tag: layer,
     props: {
       id: "watch",
-      style: {
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: "white",
-        padding: "0 10px",
-        paddingBottom: "10px",
-        borderRadius: "5px",
-      }
     },
     child: [
       {

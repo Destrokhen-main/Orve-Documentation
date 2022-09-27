@@ -2,19 +2,13 @@ import Title from "../comp/title";
 import SubTitle from "../comp/subTitle";
 import Code from "../comp/code";
 
+import layer from "../../layout/layerBlock";
+
 export default () => {
   return {
-    tag: "div",
+    tag: layer,
     props: {
       id: "file",
-      style: {
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: "white",
-        padding: "0 10px",
-        paddingBottom: "10px",
-        borderRadius: "5px",
-      }
     },
     child: [
       {
