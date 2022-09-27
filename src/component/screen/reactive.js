@@ -15,8 +15,7 @@ export default () => {
         backgroundColor: "white",
         padding: "0 10px",
         paddingBottom: "10px",
-        borderBottomLeftRadius: "5px",
-        borderBottomRightRadius: "5px"
+        borderRadius: "5px",
       }
     },
     child: [

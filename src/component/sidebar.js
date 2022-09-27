@@ -13,14 +13,15 @@ const sidebar = () => {
           left: "5px",
           bottom: "10px"
         },
-        backgroundColor: "white"
+        backgroundColor: "white",
+        borderRadius: "5px",
       }
     },
     child: [
       {
         tag: Title,
         props: {
-          title: "Menu"
+          title: "Меню"
         }
       },
       menu
