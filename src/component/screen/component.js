@@ -47,6 +47,8 @@ export default comp;`
         ],
       },
       "Если вы используете один компонент внутри другого, вы можете, отправить ему props и child",
+      "<br/>",
+      "Чтобы использовать его, просто указите его в поле tag",
       {
         tag: "p",
         child: ["Пример:"]
@@ -54,7 +56,7 @@ export default comp;`
       {
         tag: "pre",
         child: [
-`const one = (props) => {
+`const Component = (props) => {
   return {
     tag: "div",
     props: {
@@ -71,7 +73,7 @@ export default main = () => {
     tag: "div",
     child: [
       {
-        tag:one,
+        tag: Component,
         props: {
           id: "test",
         },
