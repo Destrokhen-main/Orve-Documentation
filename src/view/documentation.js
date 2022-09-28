@@ -65,7 +65,7 @@ export default () => {
   let setup = path;
   if (instruction[setup] === undefined) {
     setup = "#start";
-    reloc(setup);
+    reloc(setup.replace("#", ""));
   }
 
   const screen = refC(instruction[setup]);
