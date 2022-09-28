@@ -1,4 +1,4 @@
-import "./style.scss";
+//import "./style.scss";
 import layer from "./layout/layer";
 import doc from "./view/documentation";
 
@@ -58,4 +58,24 @@ const App = () => {
   }
 }
 
-export default App;
+
+import "./assets/style/main.scss";
+import Header from "./header"; 
+import Body from "./body";
+import Footer from "./footer";
+
+const test = () => {
+  return {
+    tag: "div",
+    props: {
+      class: "block-content"
+    },
+    child: [
+      Header,
+      Body,
+      Header
+    ]
+  }
+}
+
+export default test;

@@ -35,7 +35,7 @@ export default () => {
     props: {
       style: {
         display: "flex",
-        marginBottom: "20px"
+        width: "100%"
       }
     },
     child: [

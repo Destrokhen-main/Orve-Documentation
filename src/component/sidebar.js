@@ -44,16 +44,7 @@ const sidebar = (props) => {
   return {
     tag: "div",
     props: {
-      style: {
-        width: "30%",
-        padding: {
-          right: "5px",
-          left: "5px",
-          bottom: "10px"
-        },
-        backgroundColor: "white",
-        borderRadius: "5px",
-      }
+      class: "side-bar",
     },
     child: [
       {

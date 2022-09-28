@@ -2,10 +2,7 @@ const modal = (props) => {
   return {
     tag: "div",
     props: {
-      style: {
-        width: "70%",
-        padding: "0 5px"
-      },
+      style: "flex-grow: 1; padding: 0 5px",
       class: "modal-block"
     },
     child: [
