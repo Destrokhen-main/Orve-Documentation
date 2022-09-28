@@ -2,37 +2,6 @@ import Title from "./comp/title";
 
 import link from "../component/comp/link";
 
-const ar = [
-  {
-    title: "Запуск",
-    id: "#start"
-  },
-  {
-    title: "Файловая система",
-    id: "#file"
-  },
-  {
-    title: "Компоненты",
-    id: "#component"
-  },
-  {
-    title: "Реактивность",
-    id: "#reactive"
-  },
-  {
-    title: "Watch",
-    id: "#watch"
-  },
-  {
-    title: "Реактивные компоненты",
-    id: "#reactComp"
-  },
-  {
-    title: "Layer",
-    id: "#layer"
-  }
-]
-
 const sidebar = (props) => {
   return {
     tag: "div",
@@ -46,7 +15,7 @@ const sidebar = (props) => {
           title: "Меню",
         }
       },
-      ar.map(i => {
+      props.array.map(i => {
           return {
             tag: "div",
             props: {

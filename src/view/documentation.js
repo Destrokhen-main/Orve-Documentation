@@ -21,14 +21,59 @@ const instruction = {
   "#layer": Layer
 };
 
+const ar = [
+  {
+    title: "Запуск",
+    id: "#start"
+  },
+  {
+    title: "Файловая система",
+    id: "#file"
+  },
+  {
+    title: "Компоненты",
+    id: "#component"
+  },
+  {
+    title: "Реактивность",
+    id: "#reactive"
+  },
+  {
+    title: "Watch",
+    id: "#watch"
+  },
+  {
+    title: "Реактивные компоненты",
+    id: "#reactComp"
+  },
+  {
+    title: "Layer",
+    id: "#layer"
+  }
+]
+
+const reloc = (path) => {
+  try {
+    history.pushState(null, null, path);
+    return;
+  } catch(e) {}
+  location.hash = path;
+}
+
 export default () => {
-  let setup = "#start";
+  const path = "#" + document.location.pathname.replace("/", "");
+  let setup = path;
+  if (instruction[setup] === undefined) {
+    setup = "#start";
+    reloc(setup);
+  }
 
   const screen = refC(instruction[setup]);
   const switchScreen = (e) => {
     if (setup !== e.id) {
       screen.value = instruction[e.id];
       setup = e.id;
+      reloc(e.id.replace("#", ""))
     }
   }
 
@@ -44,7 +89,8 @@ export default () => {
       {
         tag: sidebar,
         props: {
-          call : switchScreen
+          call : switchScreen,
+          array: ar
         }
       },
       {
