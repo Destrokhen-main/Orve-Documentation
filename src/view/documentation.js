@@ -9,6 +9,7 @@ import Component from "../component/screen/component";
 import Reactive from "../component/screen/reactive";
 import Watch from "../component/screen/watch";
 import ReactiveComponent from "../component/screen/reactiveComponent";
+import Layer from "../component/screen/layer";
 
 const instruction = {
   "#start" : Start,
@@ -16,7 +17,8 @@ const instruction = {
   "#component" : Component,
   "#reactive": Reactive,
   "#watch": Watch,
-  "#reactComp": ReactiveComponent
+  "#reactComp": ReactiveComponent,
+  "#layer": Layer
 };
 
 export default () => {

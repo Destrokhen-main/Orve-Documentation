@@ -26,19 +26,12 @@ const ar = [
   {
     title: "Реактивные компоненты",
     id: "#reactComp"
+  },
+  {
+    title: "Layer",
+    id: "#layer"
   }
 ]
-
-const menu = ar.map(i => {
-  return {
-    tag: link,
-    props: {
-      title: i.title,
-      id: i.id
-    }
-  }
-});
-
 
 const sidebar = (props) => {
   return {
