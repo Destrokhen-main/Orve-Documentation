@@ -20,7 +20,7 @@ const instruction = {
 };
 
 export default () => {
-  let setup = "#reactive";
+  let setup = "#start";
 
   const screen = refC(instruction[setup]);
   const switchScreen = (e) => {
