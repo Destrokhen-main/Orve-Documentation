@@ -10,7 +10,7 @@ import Reactive from "../component/screen/reactive";
 import Watch from "../component/screen/watch";
 import ReactiveComponent from "../component/screen/reactiveComponent";
 
-const instriction = {
+const instruction = {
   "#start" : Start,
   "#file" : File,
   "#component" : Component,
@@ -20,9 +20,14 @@ const instriction = {
 };
 
 export default () => {
-  const screen = refC(instriction["#reactComp"]);
+  let setup = "#reactive";
+
+  const screen = refC(instruction[setup]);
   const switchScreen = (e) => {
-    screen.value = instriction[e.id];
+    if (setup !== e.id) {
+      screen.value = instruction[e.id];
+      setup = e.id;
+    }
   }
 
   return {
