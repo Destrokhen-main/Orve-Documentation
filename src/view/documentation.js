@@ -1,4 +1,4 @@
-import { refC } from "../../core"
+import { refC } from "sreact"
 import sidebar from "../component/sidebar";
 import modal from "../component/modal"
 

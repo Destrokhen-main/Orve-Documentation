@@ -1,4 +1,4 @@
-import { ref } from "../../../core";
+import { ref } from "sreact";
 export default () => {
   const value = ref("asd")
   return {

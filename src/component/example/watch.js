@@ -1,4 +1,4 @@
-import { ref, watch } from "../../../core";
+import { ref, watch } from "sreact";
 
 export default () => {
   const check = ref("нет");

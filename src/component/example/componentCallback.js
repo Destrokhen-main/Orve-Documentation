@@ -1,4 +1,4 @@
-import { ref } from "../../../core";
+import { ref } from "sreact";
 
 const comp = (props) => {
   return {
