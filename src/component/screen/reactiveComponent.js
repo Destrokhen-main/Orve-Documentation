@@ -6,6 +6,9 @@ import example from "../example/reactiveComp";
 export default () => {
   return {
     tag: layer,
+    props: {
+      id: "reactiveComp",
+    },
     child: [
       {
         tag: Title,

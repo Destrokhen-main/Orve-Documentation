@@ -10,6 +10,7 @@ import Reactive from "../component/screen/reactive";
 import Watch from "../component/screen/watch";
 import ReactiveComponent from "../component/screen/reactiveComponent";
 import Layer from "../component/screen/layer";
+import ReactiveList from "../component/screen/reactiveList";
 
 const instruction = {
   "#start" : Start,
@@ -18,7 +19,8 @@ const instruction = {
   "#reactive": Reactive,
   "#watch": Watch,
   "#reactComp": ReactiveComponent,
-  "#layer": Layer
+  "#layer": Layer,
+  "#effect": ReactiveList
 };
 
 const ar = [
@@ -45,6 +47,10 @@ const ar = [
   {
     title: "Реактивные компоненты",
     id: "#reactComp"
+  },
+  {
+    title: "Effect",
+    id: "#effect"
   },
   {
     title: "Layer",

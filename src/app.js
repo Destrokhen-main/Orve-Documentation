@@ -18,7 +18,6 @@ const test = () => {
           Documentation
         ]
       },
-      Header
     ]
   }
 }

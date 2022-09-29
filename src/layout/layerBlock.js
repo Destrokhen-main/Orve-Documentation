@@ -10,7 +10,6 @@ export default (props) => {
         paddingBottom: "10px",
         borderRadius: "5px",
       },
-      id: props.id
     },
     child: [
       ...props.children,
