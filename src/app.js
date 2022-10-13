@@ -9,8 +9,8 @@ import About from "./components/about/about";
 import Documentation from "./components/documentation/documentation";
 
 export default () => {
-  const Content = refC(About);
-  let current = "about";
+  const Content = refC(Documentation);
+  let current = "docu";
 
   const changePage = (page) => {
     if (page !== current) {

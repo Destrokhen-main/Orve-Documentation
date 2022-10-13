@@ -1,6 +1,6 @@
 export default (props) => {
   return {
-    tag: "h2",
+    tag: "h3",
     props: {
       style: {
         margin: "10px 0 ",
