@@ -1,10 +1,11 @@
-import "./body.scss";
-
 export default (props) => {
   return {
-    tag: "div",
+    tag: "h2",
     props: {
-      class: "block-body"
+      style: {
+        margin: "10px 20px",
+        textAlign: "start"
+      },
     },
     child: [
       ...props.children,

@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: rgb(246, 246, 246);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+
+  & img {
+    width: 40px;
+  }
+}
+
+
+.link {
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+}
+
+a {
+  cursor: pointer;
+}
+
