@@ -26,7 +26,7 @@ export default () => {
   return {
     tag: "div",
     props: {
-      style: { height: "100%" }
+      class: "main-window"
     },
     child: [
       {

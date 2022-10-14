@@ -5,6 +5,11 @@ import Code from "../../helper/Code";
 export default () => {
   return {
     tag: "div",
+    props: {
+      style: {
+        flexGrow: 1
+      }
+    },
     child: [
       {
         tag: subTitle,

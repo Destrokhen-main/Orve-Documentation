@@ -7,12 +7,13 @@ import style from "./documentation.sc.scss";
 import WebpackProject from "../DocView/fileSystem/index";
 import HTMLElement from "../DocView/node/index"
 import Components from "../DocView/component/index";
+import Event from "../DocView/Event/index";
 
 import { refC } from "sreact";
 
 let containerLink = [
   {
-    title: "webpack проект",
+    title: "Webpack проект",
     body: WebpackProject
   },
   {
@@ -22,6 +23,10 @@ let containerLink = [
   {
     title: "Компоненты",
     body: Components
+  },
+  {
+    title: "Event",
+    body: Event
   }
 ]
 
@@ -30,10 +35,10 @@ containerLink = containerLink.map((e, i) => ({
   id: i
 }));
 
-let current = 0;
+let current = 3;
 
 export default () => {
-  const container = refC(containerLink[1].body);
+  const container = refC(containerLink[3].body);
 
   const changeLink = (id) => {
     if (current !== id) {
