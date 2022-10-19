@@ -1,13 +1,17 @@
 import style from "./sidebar.sc.scss";
+import { effect } from "sreact";
+import { routerLink } from "sreact-router";
 
-export default (props) => {
+export default function() {
+  const links = this.$router.allRoute();
+  const filtered = links.filter(e => e.redirect === undefined && e.component !== undefined && e.meta !== undefined);
   return {
     tag: "div",
     props: {
       class: style.modal
     },
     child: [
-      props.links.map((e) => {
+      filtered.map(e => {
         return {
           tag: "div",
           props: {
@@ -20,16 +24,20 @@ export default (props) => {
               tag: "a",
               props: {
                 "@click": () => {
-                  props.changeLink(e.id);
-                }
+                  this.$router.push(e.path)
+                },
+                class: effect(() => {
+                  const currentPath = this.$router.currentPath();
+                  return currentPath === e.path ? style.active : "";
+                }, [ routerLink ])
               },
               child: [
-                e.title
+                e.meta.title
               ]
             }
           ]
         }
-      }) 
+      }), 
     ]
   }
 }
