@@ -11,9 +11,7 @@ export default () => {
       class: style.documentation
     },
     child: [
-      {
-        tag: SideBar
-      },
+      SideBar,
       routerLink
     ]
   }
