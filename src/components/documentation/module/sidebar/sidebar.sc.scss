@@ -2,10 +2,17 @@
   min-width: 20%;
   max-width: 30%;
   border-right: 1px solid #9d9d9d;
-  color: #a1a1a1
+  color: #a1a1a1;
+
+  & > div > a {
+    transition: 0.3s;
+    &:hover {
+      color: #5b5b5b;
+    }
+  }
 }
 
 .active {
-  color: #5e5e5e;
+  color: #303030;
   text-decoration: underline;
 }

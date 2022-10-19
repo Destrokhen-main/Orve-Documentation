@@ -31,9 +31,7 @@ export default function() {
                   return currentPath === e.path ? style.active : "";
                 }, [ routerLink ])
               },
-              child: [
-                e.meta.title
-              ]
+              child: e.meta.title
             }
           ]
         }
