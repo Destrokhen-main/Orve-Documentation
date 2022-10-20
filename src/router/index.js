@@ -3,6 +3,7 @@ import HTMLElement from "../components/DocView/node/index"
 import Components from "../components/DocView/component/index";
 import Event from "../components/DocView/Event/index";
 import Ref from "../components/DocView/ref/index";
+import RefC from "../components/DocView/refC/index";
 
 import { beforeRouter, createRouter } from "sreact-router";
 
@@ -44,6 +45,13 @@ const router = [
     component: Ref,
     meta: {
       title: "Ref"
+    }
+  },
+  {
+    path: "/refC",
+    component: RefC,
+    meta: {
+      title: "RefC"
     }
   }
 ];
