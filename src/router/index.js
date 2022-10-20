@@ -2,6 +2,8 @@ import WebpackProject from "../components/DocView/fileSystem/index";
 import HTMLElement from "../components/DocView/node/index"
 import Components from "../components/DocView/component/index";
 import Event from "../components/DocView/Event/index";
+import Ref from "../components/DocView/ref/index";
+
 import { beforeRouter, createRouter } from "sreact-router";
 
 const router = [
@@ -35,6 +37,13 @@ const router = [
     component: Event,
     meta: {
       title: "Event"
+    }
+  },
+  {
+    path: "/ref",
+    component: Ref,
+    meta: {
+      title: "Ref"
     }
   }
 ];
