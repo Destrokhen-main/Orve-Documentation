@@ -5,6 +5,7 @@ import Event from "../components/DocView/Event/index";
 import Ref from "../components/DocView/ref/index";
 import RefC from "../components/DocView/refC/index";
 import DopFunction from "../components/DocView/dopFunction/index";
+import Plugin from "../components/DocView/plugin/index";
 
 import { beforeRouter, createRouter } from "sreact-router";
 
@@ -60,6 +61,13 @@ const router = [
     component: DopFunction,
     meta: {
       title: "Дополнительные функции"
+    }
+  },
+  {
+    path: "/plugin",
+    component: Plugin,
+    meta: {
+      title: "Plugin"
     }
   }
 ];
