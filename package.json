@@ -31,6 +31,7 @@
     "log-beautify": "^1.2.0",
     "root-require": "^0.3.1",
     "to-style": "^1.3.3",
-    "sreact": "https://github.com/Destrokhen-main/sReact-npm"
+    "sreact": "https://github.com/Destrokhen-main/Simple-Reactive-npm.git",
+    "sreact-router": "https://github.com/Destrokhen-main/Simple-Reactive-router.git"
   }
 }

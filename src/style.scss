@@ -1,0 +1,15 @@
+* {
+  font-family: "font";
+  padding: 0;
+  margin: 0;
+}
+
+.main-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#app {
+  height: 100vh;
+}
