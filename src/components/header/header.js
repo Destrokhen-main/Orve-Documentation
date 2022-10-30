@@ -22,7 +22,7 @@ export default (props) => {
           {
             tag: "div",
             child: [
-              "Simple-Reactive"
+              "ORVE"
             ]
           }
         ]
