@@ -33,7 +33,6 @@
     "log-beautify": "^1.2.0",
     "orve": "^0.5.2",
     "root-require": "^0.3.1",
-    "sreact-router": "https://github.com/Destrokhen-main/Simple-Reactive-router.git",
-    "to-style": "^1.3.3"
+    "sreact-router": "https://github.com/Destrokhen-main/Simple-Reactive-router.git"
   }
 }
