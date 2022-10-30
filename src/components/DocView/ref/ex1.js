@@ -1,4 +1,4 @@
-import { ref } from "sreact";
+import { ref } from "orve";
 
 export default function() {
   const attribute = ref(0);

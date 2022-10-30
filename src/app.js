@@ -3,7 +3,7 @@ import "./style.scss";
 import layer from "./assets/style/layer.sc.scss";
 import Header from "./components/header/header";
 
-import { refC } from "sreact";
+import { refC } from "orve";
 
 import About from "./components/about/about";
 import Documentation from "./components/documentation/documentation";

@@ -1,5 +1,5 @@
 import style from "./sidebar.sc.scss";
-import { effect } from "sreact";
+import { effect } from "orve";
 import { routerLink } from "sreact-router";
 
 export default function() {

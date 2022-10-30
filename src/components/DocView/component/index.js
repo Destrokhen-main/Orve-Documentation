@@ -197,7 +197,7 @@ export default () => {
           }
 
           *2 вариант*
-          import { context } from "sreact"
+          import { context } from "orve"
 
           const component = () => {
             const c = context();

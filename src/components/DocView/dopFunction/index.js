@@ -21,7 +21,7 @@ export default function() {
       {
         tag: Code,
         child: `
-          import { watch } from "sreact";
+          import { watch } from "orve";
 
           watch(callback, dependency);
         `
@@ -32,7 +32,7 @@ export default function() {
       {
         tag: Code,
         child: `
-          import { ref, watch } from "sreact";
+          import { ref, watch } from "orve";
           export default function() {
             const r = ref("");
             watch(() => {

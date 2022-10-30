@@ -1,4 +1,4 @@
-import { createApp } from "sreact";
+import { createApp } from "orve";
 
 import App from "./app";
 import router from "./router"

@@ -34,7 +34,7 @@ export default function() {
           }
 
 
-          import { refC } from "sreact";
+          import { refC } from "orve";
 
           export default function() {
             const comp = refC(component1);

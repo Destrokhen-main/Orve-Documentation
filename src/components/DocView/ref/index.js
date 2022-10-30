@@ -30,7 +30,7 @@ export default function() {
       {
         tag: Code,
         child: `
-        import { ref } from "sreact"
+        import { ref } from "orve"
         `
       },
       "<p>Дальше его нужно вызвать</p>",
@@ -115,7 +115,7 @@ export default function() {
       {
         tag: Code,
         child: `
-          import { ref } from "sreact";
+          import { ref } from "orve";
 
           export default function() {
             const attribute = ref(0);

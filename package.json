@@ -1,15 +1,17 @@
 {
   "name": "simple-reactive",
   "version": "1.0.0",
-  "description": "cli sReact",
+  "description": "Documentation orve",
   "main": "public/index.js",
   "scripts": {
     "dev": "webpack serve --mode development",
     "build": "webpack --mode production"
   },
   "keywords": [
-    "cli",
-    "sReactive"
+    "orve",
+    "simple-reactive",
+    "sreact",
+    "doc"
   ],
   "author": "Destrokhen <armagiddon19@gmail.com>",
   "license": "MIT",
@@ -29,9 +31,9 @@
   },
   "dependencies": {
     "log-beautify": "^1.2.0",
+    "orve": "^0.5.2",
     "root-require": "^0.3.1",
-    "to-style": "^1.3.3",
-    "sreact": "https://github.com/Destrokhen-main/Simple-Reactive-npm.git",
-    "sreact-router": "https://github.com/Destrokhen-main/Simple-Reactive-router.git"
+    "sreact-router": "https://github.com/Destrokhen-main/Simple-Reactive-router.git",
+    "to-style": "^1.3.3"
   }
 }
