@@ -5,6 +5,8 @@ import Code from "../../helper/Code";
 import Example from "./ex";
 import Example1 from "./ex1";
 
+import layerForExample from "../../helper/layerForCode";
+
 export default function() {
   return {
     tag: "div",
@@ -95,7 +97,13 @@ export default function() {
         `
       },
       "<p>В итоге получим</p>",
-      Example,
+      {
+        tag: layerForExample,
+        props: {
+          file: "ex.js"
+        },
+        child: Example
+      },
       "<p>Стоит заметить. Если вы напишите r.value в child. ref к сожалению не сможет привязать данное поле к себе</p>",
       {
         tag: Code,
@@ -142,7 +150,13 @@ export default function() {
         `
       },
       "<p>В итоге получаем</p>",
-      Example1
+      {
+        tag: layerForExample,
+        props: {
+          file: "ex1.js"
+        },
+        child: Example1
+      }
     ]
   }
 }

@@ -3,6 +3,7 @@ import TitleText from "../../helper/TitleText";
 import Code from "../../helper/Code";
 
 import Example from "./ex";
+import layerForExample from "../../helper/layerForCode";
 
 export default function() {
   return {
@@ -53,7 +54,13 @@ export default function() {
         `
       },
       "<p>В итоге получим</p>",
-      Example,
+      {
+        tag: layerForExample,
+        props: {
+          file: "ex.js"
+        },
+        child: Example
+      },
       "<p>Вот так мы можем работать с реактивными компонентами.</p>"
     ]
   }
