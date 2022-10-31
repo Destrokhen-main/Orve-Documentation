@@ -28,6 +28,10 @@ export default function() {
                 },
                 class: effect(() => {
                   const currentPath = this.$router.currentPath();
+                  if (currentPath === null) {
+                    return e.path === "/wp-project" ? style.active : "";
+                  }
+
                   return currentPath === e.path ? style.active : "";
                 }, [ routerLink ])
               },
