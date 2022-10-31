@@ -2,8 +2,7 @@ import SideBar from "./module/sidebar/sidebar";
 
 import style from "./documentation.sc.scss";
 
-import { routerLink } from "sreact-router";
-
+import { RouterLink } from "sreact-router";
 export default () => {
   return {
     tag: "div",
@@ -12,7 +11,7 @@ export default () => {
     },
     child: [
       SideBar,
-      routerLink
+      RouterLink
     ]
   }
 }

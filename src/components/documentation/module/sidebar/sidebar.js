@@ -1,6 +1,6 @@
 import style from "./sidebar.sc.scss";
 import { effect } from "orve";
-import { routerLink } from "sreact-router";
+import { RouterLink } from "sreact-router";
 
 export default function() {
   const links = this.$router.allRoute();
@@ -33,7 +33,7 @@ export default function() {
                   }
 
                   return currentPath === e.path ? style.active : "";
-                }, [ routerLink ])
+                }, [ RouterLink ])
               },
               child: e.meta.title
             }

@@ -77,6 +77,6 @@ beforeRouter((_, to) => {
     document.title = to.meta.title;
 });
 
-const object = createRouter(router);
+const object = createRouter(router, "hash");
 
 export default object;
