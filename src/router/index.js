@@ -73,8 +73,6 @@ const router = [
 ];
 
 beforeRouter((_, to) => {
-  if (to.meta !== undefined)
-    document.title = to.meta.title;
 });
 
 const object = createRouter(router);
