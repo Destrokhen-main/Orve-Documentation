@@ -3,6 +3,8 @@
 
 Оbject reactive library. mix of react and vue
 
+<a href="https://destrokhen-main.github.io/wp-project" target="_blank">WEB version</a>
+
 <a href="https://github.com/Destrokhen-main/Simple-Reactive-npm" target="_blank">npm package</a>
 
 <a href="https://github.com/Destrokhen-main/simple-reactive-cli" target="_blank">Webpack project</a>
