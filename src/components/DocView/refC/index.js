@@ -8,6 +8,9 @@ import layerForExample from "../../helper/layerForCode";
 export default function() {
   return {
     tag: "div",
+    props: {
+      style: "flex-grow: 1"
+    },
     child: [
       {
         tag: subTitle,
