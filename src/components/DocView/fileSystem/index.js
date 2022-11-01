@@ -2,14 +2,11 @@ import subTitle from "../../helper/subTitle";
 import TitleText from "../../helper/TitleText";
 import Code from "../../helper/Code";
 
+import Layer from "../../helper/LayerBody"
+
 export default () => {
   return {
-    tag: "div",
-    props: {
-      style: {
-        flexGrow: 1
-      }
-    },
+    tag: Layer,
     child: [
       {
         tag: subTitle,

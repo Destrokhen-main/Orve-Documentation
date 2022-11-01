@@ -5,12 +5,11 @@ import Code from "../../helper/Code";
 import Example from "./ex";
 import layerForExample from "../../helper/layerForCode";
 
+import Layer from "../../helper/LayerBody"
+
 export default function() {
   return {
-    tag: "div",
-    props: {
-      style: "flex-grow: 1"
-    },
+    tag: Layer,
     child: [
       {
         tag: subTitle,

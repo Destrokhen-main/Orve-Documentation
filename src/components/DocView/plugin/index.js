@@ -2,9 +2,11 @@ import subTitle from "../../helper/subTitle";
 import TitleText from "../../helper/TitleText";
 import Code from "../../helper/Code";
 
+import Layer from "../../helper/LayerBody"
+
 export default function() {
   return {
-    tag: "div",
+    tag: Layer,
     child: [
       {
         tag: subTitle,

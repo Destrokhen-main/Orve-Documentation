@@ -7,9 +7,11 @@ import Example1 from "./ex1";
 
 import layerForExample from "../../helper/layerForCode";
 
+import Layer from "../../helper/LayerBody"
+
 export default function() {
   return {
-    tag: "div",
+    tag: Layer,
     child: [
       {
         tag: subTitle,
