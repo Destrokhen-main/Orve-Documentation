@@ -7,6 +7,7 @@ import RefC from "../components/DocView/refC/index";
 import DopFunction from "../components/DocView/dopFunction/index";
 import Plugin from "../components/DocView/plugin/index";
 import Router from "../components/DocView/router/index";
+import Async from "../components/DocView/async/index";
 
 import { beforeRouter, createRouter } from "sreact-router";
 
@@ -76,6 +77,13 @@ const router = [
     component: Router,
     meta: {
       title: "Router"
+    }
+  },
+  {
+    path: "/request",
+    component: Async,
+    meta: {
+      title: "Fetch Data"
     }
   }
 ];
