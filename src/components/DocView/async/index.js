@@ -191,7 +191,88 @@ export default function () {
             fontStyle: "italic"
           }
         },
-        child: 'Полный код, а так же много чего ещё, вы можете увидеть в исходном коде этого проекта.'
+        child: 'Полный код'
+      },
+      {
+        tag: Code,
+        child: `
+        import { ref } from "orve";
+
+        export default function () {
+          const input = ref(1);
+
+          const answer = {
+            body: ref("-"),
+            id: ref("-"),
+            title: ref("-"),
+            userId: ref("-")
+          };
+
+          const request = (params = 1) => {
+            fetch("https://jsonplaceholder.typicode.com/posts/" + params)
+              .then(e => e.json())
+              .then(e => {
+                answer.body.value = e.body;
+                answer.id.value = e.id;
+                answer.title.value = e.title;
+                answer.userId.value = e.userId;
+              });
+          }
+          request(1);
+          return {
+            tag: "div",
+            child: [
+              {
+                tag: "div",
+                child: [
+                  {
+                    tag: "p",
+                    child: [ "id: " , answer.id]
+                  },
+                  {
+                    tag: "p",
+                    child: [ "user-id: ", answer.userId]
+                  },
+                  {
+                    tag: "p",
+                    child: ["title:", answer.title]
+                  },
+                  {
+                    tag: "p",
+                    child: ["body:", answer.body] 
+                  }
+                ]
+              },
+              {
+                tag: "div",
+                child: [
+                  {
+                    tag: "input",
+                    props: {
+                      "@input": (e) => {
+                        input.value = e.target.value;
+                      },
+                      type: "number",
+                      min: 1,
+                      max: 100,
+                      value: 1
+                    }
+                  },
+                  {
+                    tag: "button",
+                    props: {
+                      "@click": () => {
+                        request(input.value);
+                      }
+                    },
+                    child: "Find"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+        `
       }
     ]
   }
