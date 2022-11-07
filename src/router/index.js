@@ -8,6 +8,7 @@ import DopFunction from "../components/DocView/dopFunction/index";
 import Plugin from "../components/DocView/plugin/index";
 import Router from "../components/DocView/router/index";
 import Async from "../components/DocView/async/index";
+import RefO from "../components/DocView/refO/index";
 
 import { beforeRouter, createRouter } from "sreact-router";
 
@@ -84,6 +85,13 @@ const router = [
     component: Async,
     meta: {
       title: "Fetch Data"
+    }
+  },
+  {
+    path: "/refO",
+    component: RefO,
+    meta: {
+      title: "Reactive object"
     }
   }
 ];
