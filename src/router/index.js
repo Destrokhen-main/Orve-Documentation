@@ -9,6 +9,7 @@ import Plugin from "../components/DocView/plugin/index";
 import Router from "../components/DocView/router/index";
 import Async from "../components/DocView/async/index";
 import RefO from "../components/DocView/refO/index";
+import RefL from "../components/DocView/refL/index";
 
 import { beforeRouter, createRouter } from "sreact-router";
 
@@ -92,6 +93,13 @@ const router = [
     component: RefO,
     meta: {
       title: "Reactive object"
+    }
+  },
+  {
+    path: "refL",
+    component: RefL,
+    meta: {
+      title: "Ref for HTMLelement"
     }
   }
 ];
